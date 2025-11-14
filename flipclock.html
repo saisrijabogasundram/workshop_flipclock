@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flip Clock</title>
+
+<style>
+    body {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background:#fff;
+        font-family:Arial;
+    }
+
+    .clock {
+        display:flex;
+        gap:25px;
+    }
+
+    .unit {
+        text-align:center;
+    }
+
+    .label {
+        font-size:18px;
+        color:#a33;
+        font-weight:bold;
+        margin-bottom:10px;
+    }
+
+    .card {
+        width:110px;
+        height:130px;
+        background:#111;
+        color:#fff;
+        border-radius:10px;
+        font-size:60px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+</style>
+
+</head>
+<body>
+
+<div class="clock">
+    
+    <div class="unit">
+        <div class="label">HRS</div>
+        <div class="card" id="hours">00</div>
+    </div>
+    
+
+    <div class="unit">
+        <div class="label">MIN</div>
+        <div class="card" id="minutes">00</div>
+    </div>
+    
+
+    <div class="unit">
+        <div class="label">SEC</div>
+        <div class="card" id="seconds">00</div>
+    
+    </div>
+
+</div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
